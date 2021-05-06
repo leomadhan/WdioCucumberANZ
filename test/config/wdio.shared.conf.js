@@ -129,13 +129,13 @@ exports.config = {
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        //requireModule: ['@babel/register'],
+        requireModule: ['@babel/register'],
         require: ['./test/stepDefinitions/given.js', './test/stepDefinitions/when.js', './test/stepDefinitions/then.js'],   // <string[]> (file/dir) require files before executing features
         backtrace: true,    // <boolean> show full backtrace for errors
-        compiler: ['js:babel-core/register'], // <string[]> filetype:compiler used for processing required features
-        //compiler: [], // <string[]> filetype:compiler used for processing required features
+        //compiler: ['js:babel-core/register'], // <string[]> filetype:compiler used for processing required features
+        compiler: [], // <string[]> filetype:compiler used for processing required features
         failAmbiguousDefinitions: true,       // <boolean< Treat ambiguous definitions as errors
-        dryRun: true,      // <boolean> invoke formatters without executing steps
+        dryRun: false,      // <boolean> invoke formatters without executing steps
         failFast: false,    // <boolean> abort the run on first failure
         ignoreUndefinedDefinitions: false,    // <boolean> Enable this config to treat undefined definitions as warnings
         name: [],           // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
