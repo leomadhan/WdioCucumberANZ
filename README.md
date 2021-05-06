@@ -76,6 +76,6 @@ Feature: Performing a login
 
 ```
 
-### The Page Object Design Pattern
+### Used Page Object Design Pattern
 
 - MMM
